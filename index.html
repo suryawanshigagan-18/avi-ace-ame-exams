@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#102a43">
+<title>AVI | Ace AME Exams</title>
+<style>
+:root{--navy:#102a43;--blue:#1e5b91;--sky:#e9f3fb;--ink:#162536;--muted:#627487;--line:#dbe5ee;--bg:#f5f8fb;--white:#fff;--gold:#e9b44c;--green:#13795b;--red:#b42318;--shadow:0 12px 32px rgba(16,42,67,.08)}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg)}button,select{font:inherit}button{cursor:pointer}.shell{min-height:100vh;display:grid;grid-template-columns:250px 1fr}.sidebar{background:var(--navy);color:#fff;padding:24px 16px;display:flex;flex-direction:column;gap:28px}.brand{display:flex;align-items:center;gap:12px;padding:0 8px}.logo{width:48px;height:48px;border-radius:14px;background:#fff;color:var(--navy);display:grid;place-items:center;font-weight:900;font-size:20px;letter-spacing:-1px}.brand-name{font-weight:800;font-size:17px;letter-spacing:.2px}.brand-sub{font-size:11px;color:#b7c9d8;margin-top:3px}.nav{display:grid;gap:7px}.nav button{border:0;background:transparent;color:#d2deea;text-align:left;border-radius:11px;padding:12px 13px;display:flex;align-items:center;gap:12px}.nav button.active,.nav button:hover{background:#244b6d;color:white}.nav .ico{width:20px;text-align:center}.sidebar-bottom{margin-top:auto;border-top:1px solid #35536d;padding:18px 8px 0;color:#c5d3df;font-size:12px;line-height:1.5}.main{min-width:0}.topbar{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 34px;background:#fff;border-bottom:1px solid var(--line);gap:16px}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--blue);font-weight:800}.page-title{font-size:22px;font-weight:800;margin-top:3px}.top-actions{display:flex;align-items:center;gap:10px}.select{border:1px solid var(--line);background:#fff;padding:10px 12px;border-radius:10px;color:var(--ink);max-width:190px}.avatar{height:38px;width:38px;border-radius:50%;display:grid;place-items:center;background:var(--sky);color:var(--blue);font-weight:800}.content{max-width:1280px;margin:0 auto;padding:28px 34px 50px}.hero{background:linear-gradient(115deg,#102a43,#174b73 70%,#2676a8);border-radius:22px;color:white;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:24px;box-shadow:var(--shadow);overflow:hidden;position:relative}.hero:after{content:"✈";font-size:180px;position:absolute;right:7%;top:-30px;opacity:.07;transform:rotate(-12deg)}.hero-copy{position:relative;z-index:1;max-width:660px}.hero .eyebrow{color:#b8d8ef}.hero h1{font-size:clamp(26px,3vw,39px);line-height:1.12;margin:10px 0 12px;letter-spacing:-1px}.hero p{margin:0;color:#dbeaf5;line-height:1.65;max-width:600px}.hero-cta{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}.btn{border:1px solid transparent;border-radius:10px;padding:11px 16px;font-weight:750}.btn-primary{background:var(--gold);color:#1d2c3b}.btn-white{background:#fff;color:var(--navy)}.btn-outline{background:transparent;border-color:#b7cadb;color:white}.hero-badge{position:relative;z-index:1;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);padding:18px;border-radius:16px;min-width:175px;text-align:center}.hero-badge strong{font-size:32px;display:block}.hero-badge span{font-size:12px;color:#dbeaf5}.section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;margin:28px 0 14px}.section-head h2{margin:0;font-size:19px;letter-spacing:-.3px}.section-head p{margin:5px 0 0;color:var(--muted);font-size:13px}.link-btn{background:none;border:0;color:var(--blue);font-weight:800}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:18px}.stat,.panel,.module-card,.feature-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 3px 10px rgba(16,42,67,.025)}.stat-top{display:flex;justify-content:space-between;color:var(--muted);font-size:12px}.stat-icon{background:var(--sky);width:33px;height:33px;border-radius:10px;display:grid;place-items:center;color:var(--blue);font-size:16px}.stat-value{font-size:28px;font-weight:850;margin:10px 0 3px;letter-spacing:-.7px}.stat-note{font-size:12px;color:var(--muted)}.grid-main{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(280px,1fr);gap:16px}.module-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.module-card{padding:15px;cursor:pointer;transition:.15s;border-color:var(--line)}.module-card:hover{transform:translateY(-2px);border-color:#9bbdd7;box-shadow:var(--shadow)}.module-number{font-size:11px;color:var(--blue);font-weight:900;letter-spacing:.8px}.module-card h3{font-size:13px;line-height:1.4;margin:8px 0 12px;min-height:36px}.progress{height:6px;border-radius:9px;background:#e8eef4;overflow:hidden}.progress span{height:100%;display:block;background:#3984b7;border-radius:9px}.module-foot{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--muted);margin-top:9px}.panel h3{margin:0;font-size:16px}.panel-sub{font-size:12px;color:var(--muted);margin:5px 0 16px}.activity{display:grid;gap:14px}.activity-item{display:flex;gap:11px;align-items:flex-start}.activity-icon{height:34px;width:34px;border-radius:10px;background:var(--sky);display:grid;place-items:center;color:var(--blue);flex-shrink:0}.activity-item strong{display:block;font-size:13px}.activity-item small{color:var(--muted);font-size:11px;display:block;margin-top:4px}.feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.feature-card{padding:19px}.feature-icon{height:42px;width:42px;border-radius:12px;background:var(--sky);display:grid;place-items:center;color:var(--blue);font-size:20px}.feature-card h3{margin:13px 0 7px;font-size:15px}.feature-card p{font-size:12px;line-height:1.6;color:var(--muted);margin:0 0 14px}.feature-card button{background:#eff6fb;border:0;color:var(--blue);font-size:12px;font-weight:800;padding:9px 12px;border-radius:9px}.notice{background:#fff8e7;border:1px solid #f0dfb5;border-radius:12px;padding:12px 14px;color:#6e571f;font-size:12px;line-height:1.55;margin-top:20px}.view{display:none}.view.active{display:block}.question-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:16px}.question-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px}.q-meta{display:flex;justify-content:space-between;align-items:center;gap:10px;color:var(--muted);font-size:12px}.pill{background:#eaf4fb;color:#1e5b91;padding:6px 9px;border-radius:99px;font-size:11px;font-weight:800}.question-card h2{font-size:22px;line-height:1.45;margin:22px 0}.options{display:grid;gap:10px}.option{display:flex;align-items:flex-start;gap:12px;width:100%;padding:14px;border:1px solid var(--line);background:#fff;border-radius:12px;text-align:left;line-height:1.45}.option:hover{border-color:#75a9cf;background:#f8fbfd}.option .letter{width:27px;height:27px;border:1px solid #cad8e4;border-radius:8px;display:grid;place-items:center;font-size:12px;font-weight:900;flex-shrink:0}.option.correct{border-color:#7bc4a6;background:#f0fbf6}.option.correct .letter{background:var(--green);color:#fff;border-color:var(--green)}.option.incorrect{border-color:#e7a19c;background:#fff6f5}.option.incorrect .letter{background:var(--red);color:#fff;border-color:var(--red)}.feedback{display:none;padding:13px 15px;margin-top:15px;border-radius:11px;background:#f0fbf6;color:#185c45;font-size:13px;line-height:1.5}.feedback.show{display:block}.question-actions{display:flex;justify-content:space-between;gap:10px;margin-top:20px}.question-actions .btn{background:var(--navy);color:white}.question-actions .btn:disabled{opacity:.4;cursor:not-allowed}.side-panel{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;height:max-content}.side-panel h3{margin:0 0 12px}.question-numbers{display:grid;grid-template-columns:repeat(5,1fr);gap:7px}.qnum{border:1px solid var(--line);border-radius:8px;padding:9px 0;background:#fff;color:var(--muted);font-size:12px}.qnum.current{background:var(--navy);border-color:var(--navy);color:white}.qnum.done{background:#e9f7f0;border-color:#b9e2cf;color:#13795b}.empty-state{padding:38px 22px;text-align:center;background:white;border:1px dashed #bdcddd;border-radius:16px}.empty-state .big{font-size:32px}.empty-state h3{margin:12px 0 6px}.empty-state p{color:var(--muted);font-size:13px;max-width:520px;margin:0 auto 18px;line-height:1.6}.toast{position:fixed;bottom:20px;right:20px;background:var(--navy);color:white;padding:13px 16px;border-radius:12px;box-shadow:var(--shadow);font-size:13px;display:none;z-index:10}.toast.show{display:block}.footer{margin-top:32px;color:var(--muted);font-size:11px;text-align:center}
+@media(max-width:1050px){.shell{grid-template-columns:210px 1fr}.content{padding:22px}.stats{grid-template-columns:repeat(2,1fr)}.module-grid{grid-template-columns:repeat(2,1fr)}.hero-badge{display:none}}
+@media(max-width:760px){.shell{display:block}.sidebar{padding:12px 14px;gap:12px}.brand{padding:0 4px}.nav{display:flex;overflow-x:auto;gap:5px}.nav button{white-space:nowrap;padding:10px}.nav .ico{display:none}.sidebar-bottom{display:none}.topbar{height:auto;padding:15px 18px;align-items:flex-start;flex-direction:column}.top-actions{width:100%;justify-content:space-between}.select{flex:1;max-width:none}.content{padding:18px 14px 34px}.hero{padding:22px}.hero h1{font-size:28px}.stats{gap:9px}.stat{padding:13px}.stat-value{font-size:23px}.grid-main,.question-layout{grid-template-columns:1fr}.module-grid,.feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.question-card{padding:17px}.question-card h2{font-size:19px}.side-panel{order:-1}.question-numbers{grid-template-columns:repeat(5,1fr)}}
+@media(max-width:420px){.module-grid,.feature-grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-cta .btn{width:100%}.page-title{font-size:19px}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand"><div class="logo">AVI</div><div><div class="brand-name">ACE AME EXAMS</div><div class="brand-sub">by Bluesky Aviation Academy</div></div></div>
+    <nav class="nav" aria-label="Main navigation">
+      <button class="active" data-view="dashboard"><span class="ico">⌂</span>Dashboard</button>
+      <button data-view="modules"><span class="ico">▦</span>Study Modules</button>
+      <button data-view="practice"><span class="ico">✓</span>Practice MCQs</button>
+      <button data-view="mock"><span class="ico">◷</span>Mock Tests</button>
+      <button data-view="progress"><span class="ico">▥</span>My Progress</button>
+    </nav>
+    <div class="sidebar-bottom">Your Global Partner for AME Study Guides &amp; Exam Preparation<br><br><span style="opacity:.7">Prototype • Not an official regulator product</span></div>
+  </aside>
+  <main class="main">
+    <header class="topbar">
+      <div><div class="eyebrow">AVI LEARNING PLATFORM</div><div class="page-title" id="pageTitle">Your learning cockpit</div></div>
+      <div class="top-actions">
+        <select class="select" id="authority" aria-label="Select aviation authority">
+          <option value="EASA">EASA Part-66</option><option value="FAA">FAA A&amp;P</option><option value="DGCA">DGCA India</option><option value="CASA">CASA Australia</option>
+        </select>
+        <div class="avatar" title="Demo profile">A</div>
+      </div>
+    </header>
+    <div class="content">
+      <section class="view active" id="dashboard">
+        <div class="hero">
+          <div class="hero-copy">
+            <div class="eyebrow">WELCOME TO AVI</div>
+            <h1>Build your knowledge.<br>Prepare with confidence.</h1>
+            <p>One learning space for aircraft maintenance study guides, three-option practice MCQs, and exam preparation across aviation authorities.</p>
+            <div class="hero-cta"><button class="btn btn-primary" data-go="practice">Start practising →</button><button class="btn btn-outline" data-go="modules">Explore modules</button></div>
+          </div>
+          <div class="hero-badge"><strong>17</strong><span>EASA Part-66 module areas</span></div>
+        </div>
+        <div class="stats">
+          <div class="stat"><div class="stat-top"><span>Study modules</span><span class="stat-icon">▦</span></div><div class="stat-value">17</div><div class="stat-note">EASA pilot structure</div></div>
+          <div class="stat"><div class="stat-top"><span>Questions answered</span><span class="stat-icon">✓</span></div><div class="stat-value" id="answeredCount">0</div><div class="stat-note">Saved in this browser demo</div></div>
+          <div class="stat"><div class="stat-top"><span>Accuracy</span><span class="stat-icon">◎</span></div><div class="stat-value" id="accuracyValue">—</div><div class="stat-note">Based on demo questions attempted</div></div>
+          <div class="stat"><div class="stat-top"><span>Study streak</span><span class="stat-icon">↗</span></div><div class="stat-value">—</div><div class="stat-note">Available after account setup</div></div>
+        </div>
+        <div class="section-head"><div><h2>Continue your preparation</h2><p>Choose a module to open its learning area.</p></div><button class="link-btn" data-go="modules">View all modules →</button></div>
+        <div class="grid-main">
+          <div class="module-grid" id="dashboardModules"></div>
+          <div class="panel"><h3>Your learning toolkit</h3><div class="panel-sub">Designed around the AME exam-preparation workflow.</div><div class="activity">
+            <div class="activity-item"><div class="activity-icon">📘</div><div><strong>Study guides</strong><small>Topic-by-topic learning content, linked to a syllabus.</small></div></div>
+            <div class="activity-item"><div class="activity-icon">A/B/C</div><div><strong>Three-option MCQs</strong><small>One correct answer and two distractors.</small></div></div>
+            <div class="activity-item"><div class="activity-icon">◷</div><div><strong>Timed mock tests</strong><small>Configurable test flow for exam practice.</small></div></div>
+            <div class="activity-item"><div class="activity-icon">✦</div><div><strong>AI study assistant</strong><small>Planned: answers grounded in approved source material.</small></div></div>
+          </div></div>
+        </div>
+        <div class="notice"><strong>Prototype notice:</strong> This demo contains interface scaffolding and a small illustrative sample question. It is not a complete question bank, does not provide verified current regulatory content, and does not yet connect to AI, accounts, payments, or a production database.</div>
+      </section>
+      <section class="view" id="modules">
+        <div class="section-head" style="margin-top:0"><div><h2>Study modules</h2><p id="moduleSubtitle">EASA Part-66 pilot structure · Select a module to begin.</p></div></div>
+        <div class="module-grid" id="allModules"></div>
+        <div class="notice">Module titles shown here are a navigation scaffold. Syllabus mapping, licence-category applicability, and current regulatory references must be validated before publishing study content.</div>
+      </section>
+      <section class="view" id="practice">
+        <div class="section-head" style="margin-top:0"><div><h2>Practice MCQs</h2><p>Exactly three answer options: A, B and C.</p></div><span class="pill">Learning mode</span></div>
+        <div class="question-layout">
+          <div class="question-card">
+            <div class="q-meta"><span id="questionModule">Sample question · Mathematics</span><span class="pill" id="questionCount">1 question</span></div>
+            <h2 id="questionText">Which of the following is the lowest common multiple (LCM) of 6 and 9?</h2>
+            <div class="options" id="options"></div>
+            <div class="feedback" id="feedback" role="status"></div>
+            <div class="question-actions"><button class="btn" id="resetQuestion">Try again</button><button class="btn" id="nextQuestion" disabled>Next question →</button></div>
+          </div>
+          <aside class="side-panel"><h3>Practice session</h3><p class="panel-sub">Illustrative sample only</p><div class="activity-item"><div class="activity-icon">A/B/C</div><div><strong>3 answer choices</strong><small>No fourth option in any mode.</small></div></div><div class="activity-item" style="margin-top:15px"><div class="activity-icon">✓</div><div><strong>Instant feedback</strong><small>Feedback appears after you answer.</small></div></div><div class="notice">This sample is for UI testing, not a released or audited question bank.</div></aside>
+        </div>
+      </section>
+      <section class="view" id="mock">
+        <div class="section-head" style="margin-top:0"><div><h2>Mock tests</h2><p>Choose a test mode for a future full-length assessment.</p></div></div>
+        <div class="feature-grid">
+          <div class="feature-card"><div class="feature-icon">◷</div><h3>Timed mock test</h3><p>Build a timed attempt from a verified module and licence-category exam profile.</p><button data-toast="Timed mock-test engine is the next implementation milestone.">Configure test</button></div>
+          <div class="feature-card"><div class="feature-icon">▦</div><h3>Module assessment</h3><p>Practice selected syllabus topics and review explanations after each answer.</p><button data-go="modules">Choose module</button></div>
+          <div class="feature-card"><div class="feature-icon">◎</div><h3>Review incorrect answers</h3><p>Revisit questions you missed and focus on weak syllabus areas.</p><button data-toast="Incorrect-answer review needs the full question bank and progress database.">Review answers</button></div>
+        </div>
+        <div class="notice">Official exam duration, question counts, syllabus weighting, and answer-option rules must be checked against current authority requirements before a mock test is labelled as a realistic exam simulation.</div>
+      </section>
+      <section class="view" id="progress">
+        <div class="section-head" style="margin-top:0"><div><h2>My progress</h2><p>Your local demo progress and next steps.</p></div></div>
+        <div class="stats">
+          <div class="stat"><div class="stat-top"><span>Answered</span><span class="stat-icon">✓</span></div><div class="stat-value" id="progressAnswered">0</div><div class="stat-note">Questions attempted</div></div>
+          <div class="stat"><div class="stat-top"><span>Correct</span><span class="stat-icon">◎</span></div><div class="stat-value" id="progressCorrect">0</div><div class="stat-note">Correct answers</div></div>
+          <div class="stat"><div class="stat-top"><span>Accuracy</span><span class="stat-icon">%</span></div><div class="stat-value" id="progressAccuracy">—</div><div class="stat-note">Correct / answered</div></div>
+          <div class="stat"><div class="stat-top"><span>Cloud sync</span><span class="stat-icon">↻</span></div><div class="stat-value" style="font-size:18px">Not connected</div><div class="stat-note">Login/backend not implemented</div></div>
+        </div>
+        <div class="panel" style="margin-top:16px"><h3>What happens next?</h3><p class="panel-sub">The production build will need user accounts, validated content storage, progress sync, and an admin publishing workflow.</p><button class="btn" style="background:var(--navy);color:white" data-go="modules">Explore study modules</button></div>
+      </section>
+      <div class="footer">AVI · Ace AME Exams · by Bluesky Aviation Academy<br>Your Global Partner for AME Study Guides &amp; Exam Preparation</div>
+    </div>
+  </main>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script>
+const modules = [
+["M01","Mathematics"],["M02","Physics"],["M03","Electrical Fundamentals"],["M04","Electronic Fundamentals"],["M05","Digital Techniques / Electronic Instrument Systems"],["M06","Materials and Hardware"],["M07","Maintenance Practices"],["M08","Basic Aerodynamics"],["M09","Human Factors"],["M10","Aviation Legislation"],["M11A","Turbine Aeroplane Aerodynamics, Structures and Systems"],["M11B","Piston Aeroplane Aerodynamics, Structures and Systems"],["M12","Helicopter Aerodynamics, Structures and Systems"],["M13","Aircraft Aerodynamics, Structures and Systems"],["M14","Propulsion"],["M15","Gas Turbine Engine"],["M16","Piston Engine"],["M17","Propeller"]
+];
+const state = {answered:0,correct:0,selected:null,done:false};
+const sample = {correct:"B",options:[["A","15"],["B","18"],["C","54"]],explanation:"The multiples of 6 are 6, 12, 18, … and the multiples of 9 are 9, 18, … . The lowest common multiple is 18."};
+function renderModules(target, limit=modules.length){const el=document.getElementById(target);el.innerHTML="";modules.slice(0,limit).forEach((m,i)=>{const card=document.createElement("div");card.className="module-card";card.innerHTML=`<div class="module-number">${m[0]}</div><h3>${m[1]}</h3><div class="progress"><span style="width:${i===0?0:0}%"></span></div><div class="module-foot"><span>Content pending validation</span><span>→</span></div>`;card.addEventListener("click",()=>{if(m[0]==="M01"){go("practice")}else{showToast(`${m[0]} selected. Syllabus-mapped content is not loaded yet.`)}});el.appendChild(card)})}
+function renderQuestion(){const options=document.getElementById("options");options.innerHTML="";sample.options.forEach(([letter,value])=>{const b=document.createElement("button");b.className="option";b.innerHTML=`<span class="letter">${letter}</span><span>${value}</span>`;b.addEventListener("click",()=>answer(letter,b));options.appendChild(b)});document.getElementById("feedback").classList.remove("show");document.getElementById("nextQuestion").disabled=true;state.selected=null;state.done=false;document.getElementById("questionCount").textContent="Sample 1 of 1"}
+function answer(letter,button){if(state.done)return;state.done=true;state.selected=letter;state.answered++;const correct=letter===sample.correct;if(correct)state.correct++;document.querySelectorAll(".option").forEach(b=>{const l=b.querySelector(".letter").textContent;if(l===sample.correct)b.classList.add("correct");else if(b===button&&!correct)b.classList.add("incorrect");b.disabled=true});const f=document.getElementById("feedback");f.innerHTML=`<strong>${correct?"Correct!":"Not quite."}</strong> ${sample.explanation}`;f.classList.add("show");document.getElementById("nextQuestion").disabled=false;updateStats()}
+function updateStats(){const acc=state.answered?Math.round(state.correct/state.answered*100)+"%":"—";["answeredCount","progressAnswered"].forEach(id=>document.getElementById(id).textContent=state.answered);["accuracyValue","progressAccuracy"].forEach(id=>document.getElementById(id).textContent=acc);document.getElementById("progressCorrect").textContent=state.correct}
+function go(id){document.querySelectorAll(".view").forEach(v=>v.classList.toggle("active",v.id===id));document.querySelectorAll(".nav button").forEach(b=>b.classList.toggle("active",b.dataset.view===id));const titles={dashboard:"Your learning cockpit",modules:"Study modules",practice:"Practice MCQs",mock:"Mock tests",progress:"My progress"};document.getElementById("pageTitle").textContent=titles[id]||"AVI";if(id==="practice"&&!state.done)renderQuestion();window.scrollTo({top:0,behavior:"smooth"})}
+function showToast(msg){const t=document.getElementById("toast");t.textContent=msg;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),3000)}
+document.querySelectorAll("[data-view]").forEach(b=>b.addEventListener("click",()=>go(b.dataset.view)));
+document.querySelectorAll("[data-go]").forEach(b=>b.addEventListener("click",()=>go(b.dataset.go)));
+document.querySelectorAll("[data-toast]").forEach(b=>b.addEventListener("click",()=>showToast(b.dataset.toast)));
+document.getElementById("resetQuestion").addEventListener("click",renderQuestion);
+document.getElementById("nextQuestion").addEventListener("click",()=>showToast("This pilot currently includes one illustrative sample question. The content pipeline is the next milestone."));
+document.getElementById("authority").addEventListener("change",e=>{const v=e.target.value;showToast(`${v} selected. Authority-specific syllabus content must be mapped and verified before release.`);document.getElementById("moduleSubtitle").textContent=`${v} selected · Content mapping pending verification.`});
+renderModules("dashboardModules",6);renderModules("allModules");renderQuestion();updateStats();
+</script>
+</body>
+</html>
