@@ -1,0 +1,64 @@
+{
+  "product": "AVI \u2014 Ace AME Exams",
+  "module": "EASA Part-66 Module 1 \u2014 Mathematics",
+  "build": "Pilot Build 1.0",
+  "prepared": "2026-11-19",
+  "student_sections": [
+    "Study Guide",
+    "MCQ Bank",
+    "Mock Test"
+  ],
+  "study_guide": {
+    "file": "study-guide/AVI_Module_1_Mathematics_Study_Guide_v4_4.pdf",
+    "version": "4.4",
+    "page_count": 28,
+    "status": "Existing draft reused; not yet fully syllabus-mapped, independently proofread or release-approved."
+  },
+  "mcq_bank": {
+    "file": "data/module1-preview.json",
+    "count": 700,
+    "topic_counts": {
+      "1.1 Arithmetic": 150,
+      "1.2(a) Simple algebraic expressions": 110,
+      "1.2(b) Equations": 150,
+      "1.3(a) Simple geometrical constructions": 60,
+      "1.3(b) Graphical representation": 120,
+      "1.3(c) Trigonometry": 110
+    },
+    "release_approved": 0,
+    "nonblank_explanation_fields": 150,
+    "explanation_fields_marked_pending": 33,
+    "status": "Working bank imported; all 700 are not release-approved. Blank/pending explanations and human distractor, scope, cognitive-demand and SME validation remain."
+  },
+  "mock_test": {
+    "status": "Functional beta workflow implemented; content approval remains separate.",
+    "category_A": {
+      "questions": 16,
+      "minutes": 20,
+      "topic_distribution": {
+        "1.1 Arithmetic": 6,
+        "1.2(a) Simple algebraic expressions": 5,
+        "1.3(b) Graphical representation": 5
+      }
+    },
+    "B1_B2_B2L_B3": {
+      "questions": 32,
+      "minutes": 40,
+      "topic_distribution": {
+        "1.1 Arithmetic": 6,
+        "1.2(a) Simple algebraic expressions": 4,
+        "1.2(b) Equations": 12,
+        "1.3(a) Simple geometrical constructions": 3,
+        "1.3(b) Graphical representation": 4,
+        "1.3(c) Trigonometry": 3
+      }
+    },
+    "category_eligibility": "Uses catAEligible/klA for Category A and bEligible/klB1 for B1/B2/B2L/B3; B1.E not enabled.",
+    "limitations": [
+      "Practice simulation only, not an official EASA exam",
+      "No server-side question security",
+      "No user accounts or cloud result storage"
+    ]
+  },
+  "release_gate": "INTERNAL PILOT / DEMONSTRATION ONLY \u2014 NOT FOR COMMERCIAL SALE"
+}
