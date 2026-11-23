@@ -1,227 +1,60 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#102a43">
-<title>AVI | Module 1 Mathematics</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#071426">
+<meta name="description" content="AVI — a focused aircraft maintenance examination preparation platform. Explore country-specific licensing pathways, study guides, MCQ practice and mock tests.">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<title>AVI | Aircraft Maintenance Exam Preparation</title>
 <style>
-:root{--navy:#102a43;--blue:#1e5b91;--sky:#eaf3fb;--ink:#162536;--muted:#627487;--line:#dbe5ee;--bg:#f5f8fb;--white:#fff;--gold:#f4c66a;--green:#13795b;--red:#b42318}
-*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg)}
-header{background:var(--navy);color:#fff;padding:18px max(18px,calc((100vw - 1180px)/2));display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:12px}.logo{width:44px;height:44px;border-radius:12px;background:#fff;color:var(--navy);display:grid;place-items:center;font-weight:900;font-size:19px}.brand strong{display:block;font-size:17px}.brand small{color:#c5d5e2}
-.wrap{max-width:1180px;margin:22px auto;padding:0 18px}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}.tab{border:1px solid var(--line);background:#fff;padding:11px 18px;border-radius:10px;font-weight:750;color:var(--navy);cursor:pointer}.tab.active{background:var(--navy);color:#fff;border-color:var(--navy)}
-.notice{border:1px solid #e8c66f;background:#fff8e6;color:#684c0d;padding:13px 15px;border-radius:12px;margin-bottom:16px;font-size:13px;line-height:1.5}
-.panel{background:#fff;border:1px solid var(--line);border-radius:15px;padding:18px;box-shadow:0 5px 18px rgba(16,42,67,.04);margin-bottom:16px}
-h1,h2,h3{color:var(--navy);margin:0 0 10px}h1{font-size:25px}h2{font-size:21px}h3{font-size:17px}p{line-height:1.55}.muted{color:var(--muted)}.small{font-size:12px;color:var(--muted)}
-.btn{border:0;border-radius:9px;padding:11px 15px;background:var(--navy);color:white;font-weight:750;cursor:pointer}.btn.secondary{background:#eaf1f7;color:var(--navy);border:1px solid var(--line)}.btn:disabled{opacity:.5;cursor:not-allowed}
-select,input{padding:10px 12px;border:1px solid #cbd8e3;border-radius:9px;background:white;color:var(--ink);font:inherit}
-.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:12px 0}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}.stat{padding:15px;background:#f7fafc;border:1px solid var(--line);border-radius:12px}.stat b{display:block;font-size:25px;color:var(--navy)}
-.qcard{border:1px solid var(--line);border-radius:12px;padding:15px;margin:10px 0}.qmeta{font-size:12px;color:var(--muted);margin-bottom:8px}.qstem{font-weight:700;line-height:1.5;margin-bottom:12px}.opt{display:block;border:1px solid var(--line);padding:10px 12px;border-radius:9px;margin:7px 0;cursor:pointer;background:#fff}.opt input{margin-right:8px}.answer{background:#f0f8f4;border:1px solid #b8dfca;padding:11px;border-radius:9px;margin-top:10px;font-size:13px}
-.hidden{display:none!important}iframe{width:100%;height:76vh;border:0;border-radius:10px;background:#eef2f6}
-.exam-top{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}.timer{font-size:22px;font-weight:850;color:var(--red);font-variant-numeric:tabular-nums}
-.progress{height:8px;background:#e8eef3;border-radius:20px;overflow:hidden;margin:12px 0}.progress>div{height:100%;background:#2c7a61;width:0}
-.option-btn{display:block;width:100%;text-align:left;padding:13px;border:1px solid var(--line);border-radius:10px;background:#fff;margin:8px 0;cursor:pointer}.option-btn.selected{border:2px solid var(--blue);background:#edf5fc}
-.result-row{padding:10px;border-bottom:1px solid var(--line);font-size:13px}.pill{display:inline-block;background:#eaf1f7;color:var(--navy);border-radius:30px;padding:4px 9px;font-size:11px;font-weight:800}
-footer{padding:24px;text-align:center;color:var(--muted);font-size:12px}
-@media(max-width:650px){header{padding:14px 16px}.wrap{margin:14px auto;padding:0 12px}.panel{padding:14px}iframe{height:68vh}}
+:root{--ink:#101d2c;--navy:#071426;--navy2:#0c2138;--navy3:#153653;--gold:#d9b875;--gold2:#f0d9a7;--paper:#f6f7f8;--white:#fff;--muted:#667587;--line:#e2e7ec;--blue:#245b83;--green:#5e8a78;--shadow:0 22px 60px rgba(6,20,37,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}button,select{font:inherit}.wrap{width:min(1160px,calc(100% - 44px));margin:auto}
+.top{height:78px;display:flex;align-items:center;justify-content:space-between;background:rgba(7,20,38,.98);color:#fff;padding:0 max(22px,calc((100vw - 1160px)/2));border-bottom:1px solid #ffffff18;position:sticky;top:0;z-index:20;backdrop-filter:blur(14px)}.brand{display:flex;align-items:center;gap:12px}.brandmark{width:42px;height:42px;border:1px solid #c7a96d;border-radius:12px;display:grid;place-items:center;color:var(--gold);font-size:17px;font-weight:900;letter-spacing:-1px}.brandname{font-size:21px;letter-spacing:3px;font-weight:850}.brandtag{font-size:9px;letter-spacing:1.8px;color:#aab9c8;margin-top:3px}.nav{display:flex;align-items:center;gap:28px;font-size:12px;color:#d2dbe4}.nav a:hover{color:var(--gold2)}.navcta{background:var(--gold);color:#132235!important;padding:11px 17px;border-radius:6px;font-weight:800}
+.hero{background:radial-gradient(ellipse at 78% 35%,#1c4667 0,#102a45 32%,#071426 74%);color:#fff;position:relative;overflow:hidden;min-height:590px}.hero:before{content:"";position:absolute;width:660px;height:660px;border:1px solid #ffffff0b;border-radius:50%;right:-90px;top:-120px;box-shadow:0 0 0 65px #ffffff05,0 0 0 130px #ffffff03}.hero:after{content:"AVI";position:absolute;right:2%;bottom:-115px;font-size:clamp(220px,31vw,440px);font-weight:950;letter-spacing:-.09em;color:#ffffff07;pointer-events:none}.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center;padding:90px 0 84px}.eyebrow{color:var(--gold);font-size:10px;font-weight:850;letter-spacing:3px;text-transform:uppercase}.hero h1{font-size:clamp(43px,5.8vw,70px);line-height:1.02;letter-spacing:-3px;margin:19px 0 20px;max-width:700px}.hero h1 em{font-style:normal;color:var(--gold2)}.hero-copy{font-size:16px;line-height:1.8;color:#c3d0dc;max-width:590px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{border:0;cursor:pointer;border-radius:6px;padding:14px 19px;font-weight:800;font-size:12px;display:inline-flex;align-items:center;justify-content:center;gap:9px}.btn-gold{background:var(--gold);color:#132235}.btn-outline{border:1px solid #8195a8;color:#fff;background:#ffffff08}.hero-proof{display:flex;gap:23px;flex-wrap:wrap;margin-top:40px;color:#aebdca;font-size:10px;letter-spacing:.4px}.hero-proof span:before{content:"✦";color:var(--gold);margin-right:8px}
+.pathway-card{background:#fff;color:var(--ink);border-radius:13px;padding:25px;box-shadow:0 26px 70px #0005;position:relative}.pathway-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.pathway-top b{font-size:14px}.live{font-size:9px;color:#477965;background:#eaf3ee;border-radius:20px;padding:6px 9px;font-weight:800;letter-spacing:.8px}.pathway-card p{font-size:11px;color:var(--muted);line-height:1.55;margin:0 0 18px}.field{margin:14px 0}.field label{display:block;font-size:9px;letter-spacing:1.2px;font-weight:850;color:#66778a;margin-bottom:7px}.field select{width:100%;padding:13px 12px;border:1px solid #dce3e9;border-radius:6px;background:#fbfcfd;color:#1a2a3c;font-size:12px;outline:none}.field select:focus{border-color:#b18b4e;box-shadow:0 0 0 3px #d9b87525}.pathway-card .btn{width:100%;margin-top:5px}.pathway-foot{font-size:9px;color:#8a97a4;text-align:center;margin-top:12px;line-height:1.5}.selection-msg{display:none;background:#f4f6f8;border:1px solid #e2e7ec;padding:12px;border-radius:6px;font-size:11px;line-height:1.55;margin-top:12px}
+.trustbar{background:#fff;border-bottom:1px solid var(--line)}.trustinner{display:grid;grid-template-columns:repeat(3,1fr);padding:20px 0}.trustitem{display:flex;align-items:center;justify-content:center;gap:11px;border-right:1px solid var(--line);font-size:11px;color:#526273}.trustitem:last-child{border:0}.trusticon{width:30px;height:30px;border-radius:8px;background:#f0eee8;color:#8d713d;display:grid;place-items:center;font-size:14px}
+.section{padding:76px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:28px}.kicker{font-size:9px;color:#9a783d;font-weight:900;letter-spacing:2.2px;text-transform:uppercase}.section h2{font-size:34px;letter-spacing:-1.2px;color:var(--navy);margin:9px 0 10px}.lead{font-size:13px;line-height:1.75;color:var(--muted);max-width:620px}.authority-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.authority{background:#fff;border:1px solid var(--line);border-radius:9px;padding:20px;transition:.2s}.authority:hover,.learning-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.flag{font-size:21px}.authority h3{font-size:14px;color:var(--navy);margin:12px 0 6px}.authority p{font-size:11px;color:var(--muted);line-height:1.6;margin:0}.status{display:inline-block;margin-top:14px;font-size:9px;letter-spacing:.5px;font-weight:800;color:#6b7785;background:#f0f2f4;padding:6px 8px;border-radius:4px}.authority.featured{border-color:#d6bd8b;background:linear-gradient(145deg,#fff,#fbf8f1)}.authority.featured .status{color:#86672f;background:#f5eddb}
+.learning{background:#edf1f4}.learning-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.learning-card{background:#fff;border:1px solid #e0e6eb;border-radius:10px;padding:25px;transition:.2s}.learn-icon{width:42px;height:42px;border-radius:9px;background:#edf1f4;color:#1d496b;display:grid;place-items:center;font-size:18px}.learning-card h3{margin:17px 0 8px;color:var(--navy);font-size:16px}.learning-card p{font-size:12px;line-height:1.7;color:var(--muted);min-height:60px}.learning-card a{font-size:10px;font-weight:850;color:#245b83;letter-spacing:.3px}.process{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.process-card{border-top:2px solid var(--gold);background:#fff;padding:19px;border-radius:0 0 8px 8px}.process-card small{font-size:9px;letter-spacing:1.4px;color:#9b793e;font-weight:900}.process-card b{display:block;font-size:13px;margin:10px 0 7px;color:var(--navy)}.process-card p{font-size:11px;line-height:1.6;color:var(--muted);margin:0}
+.cta{background:linear-gradient(110deg,#0a1b30,#153b59);color:#fff;border-radius:12px;padding:38px 42px;display:flex;justify-content:space-between;align-items:center;gap:25px}.cta h2{color:#fff;font-size:26px;margin:8px 0}.cta p{font-size:12px;color:#bfccd8;line-height:1.65;max-width:570px}.footer{background:#061222;color:#aab8c6;padding:38px 0 25px}.footerinner{display:flex;justify-content:space-between;gap:25px;align-items:start}.footerbrand{font-size:18px;letter-spacing:3px;font-weight:900;color:#fff}.footer small{display:block;font-size:10px;color:#8293a4;line-height:1.7;margin-top:10px;max-width:590px}.footlinks{display:flex;gap:20px;font-size:10px}.copyright{border-top:1px solid #ffffff16;margin-top:28px;padding-top:17px;font-size:9px;color:#77899b}
+@media(max-width:850px){.hero-grid{grid-template-columns:1fr;gap:35px;padding:65px 0}.pathway-card{max-width:520px}.authority-grid{grid-template-columns:repeat(2,1fr)}.nav{gap:15px}.nav a:not(.navcta){display:none}.process{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.wrap{width:calc(100% - 34px)}.top{height:68px;padding:0 17px}.brandname{font-size:18px}.navcta{padding:10px 12px}.hero-grid{padding:53px 0 48px}.hero h1{font-size:44px;letter-spacing:-2px}.hero-copy{font-size:14px}.hero-proof{gap:12px;flex-direction:column;margin-top:28px}.pathway-card{padding:20px}.trustinner{grid-template-columns:1fr;gap:12px;padding:17px 0}.trustitem{justify-content:flex-start;border:0}.section{padding:55px 0}.section h2{font-size:28px}.section-head{display:block}.authority-grid,.learning-grid,.process{grid-template-columns:1fr}.learning-card p{min-height:0}.cta{padding:27px 23px;display:block}.cta .btn{margin-top:10px}.footerinner{display:block}.footlinks{margin-top:20px;flex-wrap:wrap}}
 </style>
 </head>
 <body>
-<header>
- <div class="brand"><div class="logo">AVI</div><div><strong>AVI — Ace AME Exams</strong><small>EASA Part-66 · Module 1 Mathematics</small></div></div>
- <span class="pill" style="background:#fff2d6;color:#76530a">INTERNAL PILOT BUILD</span>
-</header>
-<main class="wrap">
- <div class="tabs">
-  <button class="tab active" data-tab="guide">1. Study Guide</button>
-  <button class="tab" data-tab="bank">2. MCQ Bank</button>
-  <button class="tab" data-tab="mock">3. Mock Test</button>
- </div>
- <div class="notice"><b>Content status:</b> This pilot uses the existing Study Guide v4.4 and 700-question working bank. The guide and questions have not yet completed final academic/regulatory approval. Use for internal product testing only; do not sell or describe this as validated EASA exam material.</div>
-
- <section id="guide" class="view">
-  <div class="panel">
-   <h1>Module 1 — Mathematics Study Guide</h1>
-   <p class="muted">Current project guide · Version 4.4 · 28 pages</p>
-   <div class="controls">
-    <a class="btn" href="study-guide/AVI_Module_1_Mathematics_Study_Guide_v4_4.pdf" target="_blank" rel="noopener">Open / Download Study Guide PDF</a>
-    <a class="btn secondary" href="study-guide/AVI_Module_1_Mathematics_Study_Guide_v4_4_EDITABLE.docx" download>Download editable DOCX</a>
-   </div>
-   <iframe title="Module 1 Mathematics Study Guide" src="study-guide/AVI_Module_1_Mathematics_Study_Guide_v4_4.pdf"></iframe>
-  </div>
- </section>
-
- <section id="bank" class="view hidden">
-  <div class="panel">
-   <h1>Module 1 — MCQ Bank</h1>
-   <p class="muted">Browse the existing 700-question working bank by licence category and syllabus topic.</p>
-   <div class="grid">
-    <div class="stat"><b id="totalCount">700</b><span class="small">Working-bank questions</span></div>
-    <div class="stat"><b>6</b><span class="small">Syllabus topics</span></div>
-    <div class="stat"><b>0</b><span class="small">Release-approved items</span></div>
-   </div>
-   <div class="controls">
-    <select id="bankCategory">
-     <option value="A">Category A</option><option value="B1">B1</option><option value="B2">B2</option><option value="B2L">B2L</option><option value="B3">B3</option>
-    </select>
-    <select id="bankTopic"><option value="">All topics</option></select>
-    <input id="bankSearch" placeholder="Search question text or ID" style="flex:1;min-width:190px">
-   </div>
-   <p class="small" id="bankCount"></p>
-   <div id="bankList"></div>
-   <div class="controls"><button class="btn secondary" id="bankPrev">Previous</button><span id="bankPage" class="small"></span><button class="btn secondary" id="bankNext">Next</button></div>
-  </div>
- </section>
-
- <section id="mock" class="view hidden">
-  <div class="panel" id="mockSetup">
-   <h1>Module 1 — Mock Test</h1>
-   <p class="muted">Category-specific examination pattern from the project blueprint.</p>
-   <div class="grid">
-    <div class="stat"><b>16</b><span class="small">Category A · 20 minutes</span></div>
-    <div class="stat"><b>32</b><span class="small">B1 / B2 / B2L / B3 · 40 minutes</span></div>
-    <div class="stat"><b>75%</b><span class="small">Practice pass benchmark configured</span></div>
-   </div>
-   <div class="controls">
-    <label><b>Licence category</b><br><select id="mockCategory"><option>A</option><option>B1</option><option>B2</option><option>B2L</option><option>B3</option></select></label>
-    <button class="btn" id="startMock">Start timed mock test</button>
-   </div>
-   <h3>Question distribution</h3>
-   <div id="blueprintTable"></div>
-   <p class="small">Questions are selected only from the category-eligible topic/KL pools. B1.E is not enabled. The selected bank is still unapproved; scores are for workflow testing only.</p>
-  </div>
-  <div class="panel hidden" id="examPanel">
-   <div class="exam-top"><div><span class="pill" id="examCategory"></span><div class="small" id="examProgress"></div></div><div class="timer" id="timer">20:00</div></div>
-   <div class="progress"><div id="progressBar"></div></div>
-   <div id="examQuestion"></div>
-   <div class="controls">
-    <button class="btn secondary" id="prevQ">Previous</button>
-    <button class="btn secondary" id="nextQ">Next</button>
-    <button class="btn" id="submitMock">Submit test</button>
-   </div>
-  </div>
-  <div class="panel hidden" id="examResult"></div>
- </section>
+<header class="top"><a class="brand" href="./" aria-label="AVI home"><div class="brandmark">AVI</div><div><div class="brandname">AVI</div><div class="brandtag">AIRCRAFT MAINTENANCE EXAM PREPARATION</div></div></a><nav class="nav"><a href="#pathways">Examination pathways</a><a href="#learning">How AVI works</a><a href="#about">About</a><a class="navcta" href="#pathways">Explore pathways&nbsp; ↗</a></nav></header>
+<main>
+<section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">A focused platform for your next aviation milestone</div><h1>Prepare for your future in <em>aircraft maintenance.</em></h1><p class="hero-copy">A structured examination preparation experience for aircraft maintenance professionals and aspiring engineers. Find your regulatory pathway, build your knowledge and prepare with purpose.</p><div class="hero-actions"><a class="btn btn-gold" href="#pathways">Explore examination pathways&nbsp; →</a><a class="btn btn-outline" href="#learning">Discover AVI</a></div><div class="hero-proof"><span>Structured study resources</span><span>Topic-wise question practice</span><span>Timed mock-test preparation</span></div></div>
+<div class="pathway-card" id="pathways"><div class="pathway-top"><b>Find your examination pathway</b><span class="live">START HERE</span></div><p>Select your country or region, then choose the relevant authority and licence pathway. Available programmes are released in stages.</p><div class="field"><label for="country">01 &nbsp; COUNTRY / REGION</label><select id="country"><option value="">Choose your country</option><option>India</option><option>United Kingdom</option><option>European Union / EASA Member State</option><option>United Arab Emirates</option><option>Saudi Arabia</option><option>United States</option><option>Australia</option><option>Canada</option><option>New Zealand</option><option>Other</option></select></div><div class="field"><label for="authority">02 &nbsp; EXAMINATION AUTHORITY</label><select id="authority" disabled><option>Select country first</option></select></div><div class="field"><label for="licence">03 &nbsp; LICENCE / CATEGORY</label><select id="licence" disabled><option>Select authority first</option></select></div><button class="btn btn-gold" id="continue" disabled>View my pathway&nbsp; →</button><div class="selection-msg" id="selectionMsg" aria-live="polite"></div><div class="pathway-foot">Pathway details and learning availability depend on the relevant authority and programme release.</div></div>
+</div></section>
+<div class="trustbar"><div class="wrap trustinner"><div class="trustitem"><span class="trusticon">⌘</span>Built around examination pathways</div><div class="trustitem"><span class="trusticon">▤</span>Three focused learning sections</div><div class="trustitem"><span class="trusticon">◎</span>Designed for mobile and desktop</div></div></div>
+<section class="section"><div class="wrap"><div class="section-head"><div><div class="kicker">Explore the global landscape</div><h2>One starting point. Multiple pathways.</h2><p class="lead">AVI is being developed to organise aircraft maintenance examination preparation by country, competent authority and applicable licence category. The directory will expand as each pathway is researched and its learning content is prepared.</p></div></div><div class="authority-grid" id="authorityPreview">
+<article class="authority featured"><div class="flag">🇪🇺</div><h3>EASA Part-66</h3><p>European aircraft maintenance licensing framework. The first AVI learning pilot is focused on Module 1 — Mathematics.</p><span class="status">FIRST PILOT PROGRAMME</span></article>
+<article class="authority"><div class="flag">🇮🇳</div><h3>DGCA India</h3><p>Aircraft Maintenance Engineer examination and licensing pathway. Programme development planned.</p><span class="status">PATHWAY DIRECTORY</span></article>
+<article class="authority"><div class="flag">🇬🇧</div><h3>UK CAA</h3><p>UK Part-66 aircraft maintenance licensing pathway. Requirements to be mapped to current UK rules.</p><span class="status">PATHWAY DIRECTORY</span></article>
+<article class="authority"><div class="flag">🇦🇪</div><h3>GCAA UAE</h3><p>UAE aircraft maintenance licensing information. Applicable route and categories require authority-specific verification.</p><span class="status">PLANNED DIRECTORY</span></article>
+<article class="authority"><div class="flag">🇸🇦</div><h3>GACA Saudi Arabia</h3><p>Saudi aircraft maintenance licensing information. Learning programme to be developed after regulatory mapping.</p><span class="status">PLANNED DIRECTORY</span></article>
+<article class="authority"><div class="flag">🌐</div><h3>More authorities</h3><p>Additional national and regional pathways will be added following research and content validation.</p><span class="status">EXPANDING</span></article>
+</div></div></section>
+<section class="learning section" id="learning"><div class="wrap"><div class="section-head"><div><div class="kicker">The AVI learning experience</div><h2>Three ways to prepare. One clear journey.</h2><p class="lead">Every available module is organised into three student-facing sections. No clutter, no confusing learning menus — just the resources needed for focused exam preparation.</p></div></div><div class="learning-grid"><article class="learning-card"><div class="learn-icon">▤</div><h3>Study Guide</h3><p>Build understanding with structured explanations, worked examples, diagrams, formulae and revision summaries.</p><a href="#pathways">EXPLORE STUDY RESOURCES&nbsp; →</a></article><article class="learning-card"><div class="learn-icon">✎</div><h3>MCQ Bank</h3><p>Practise by subject and topic, review correct answers and strengthen understanding through explanations.</p><a href="#pathways">EXPLORE QUESTION PRACTICE&nbsp; →</a></article><article class="learning-card"><div class="learn-icon">◷</div><h3>Mock Test</h3><p>Experience timed practice, assess your readiness and review your responses after each attempt.</p><a href="#pathways">EXPLORE MOCK TESTS&nbsp; →</a></article></div></div></section>
+<section class="section"><div class="wrap"><div class="section-head"><div><div class="kicker">A clear preparation flow</div><h2>From pathway selection to exam readiness.</h2></div></div><div class="process"><div class="process-card"><small>01 / SELECT</small><b>Choose your country</b><p>Start with the country or region relevant to your intended licence.</p></div><div class="process-card"><small>02 / IDENTIFY</small><b>Select the authority and category</b><p>Find the applicable regulatory pathway and licence category.</p></div><div class="process-card"><small>03 / LEARN</small><b>Study and practise</b><p>Use the study guide and topic-wise question bank.</p></div><div class="process-card"><small>04 / ASSESS</small><b>Take mock tests</b><p>Practise under timed conditions and review your performance.</p></div></div></div></section>
+<section class="section" id="about" style="padding-top:0"><div class="wrap"><div class="cta"><div><div class="eyebrow">Your next step starts here</div><h2>Make your preparation more structured.</h2><p>Explore the first available learning pilot and follow AVI as additional examination pathways are introduced.</p></div><a class="btn btn-gold" href="module1.html">Explore EASA Module 1 pilot&nbsp; →</a></div></div></section>
 </main>
-<footer>AVI — Ace AME Exams · Module 1 pilot build · Internal testing only</footer>
+<footer class="footer"><div class="wrap"><div class="footerinner"><div><div class="footerbrand">AVI</div><small>Aircraft Maintenance Examination Preparation<br>Prepare. Perform. Progress.<br><br>AVI is an independent examination-preparation platform. It is not a regulatory authority and does not claim endorsement by EASA, DGCA, UK CAA, GCAA, GACA or any other regulator. Regulatory pathways and examination requirements must be confirmed with the relevant competent authority.</small></div><div class="footlinks"><a href="#pathways">Pathways</a><a href="#learning">Learning</a><a href="module1.html">Module 1 pilot</a></div></div><div class="copyright">© 2026 AVI. All rights reserved. &nbsp; | &nbsp; An independent learning platform.</div></div></footer>
 <script>
-const TOPICS=[
- "1.1 Arithmetic",
- "1.2(a) Simple algebraic expressions",
- "1.2(b) Equations",
- "1.3(a) Simple geometrical constructions",
- "1.3(b) Graphical representation",
- "1.3(c) Trigonometry"
-];
-const BLUEPRINT={
- A:{minutes:20,counts:{"1.1 Arithmetic":6,"1.2(a) Simple algebraic expressions":5,"1.3(b) Graphical representation":5}},
- B1:{minutes:40,counts:{"1.1 Arithmetic":6,"1.2(a) Simple algebraic expressions":4,"1.2(b) Equations":12,"1.3(a) Simple geometrical constructions":3,"1.3(b) Graphical representation":4,"1.3(c) Trigonometry":3}}
-};
-let BANK=[], page=0, exam=null, timerHandle=null;
-const $=id=>document.getElementById(id);
-function eligible(q,cat){
- if(cat==="A") return q.catAEligible===true && ["1","2"].includes(String(q.klA));
- return q.bEligible===true && ["1","2"].includes(String(q.klB1));
-}
-function categoryKL(q,cat){return cat==="A"?`KL${q.klA}`:`KL${q.klB1}`;}
-function setTab(name){
- document.querySelectorAll(".tab").forEach(b=>b.classList.toggle("active",b.dataset.tab===name));
- document.querySelectorAll(".view").forEach(v=>v.classList.toggle("hidden",v.id!==name));
-}
-document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>setTab(b.dataset.tab)));
-async function loadBank(){
- const r=await fetch("data/module1-preview.json"); if(!r.ok) throw new Error("Could not load question bank");
- const data=await r.json(); BANK=data.questions||[];
- $("totalCount").textContent=BANK.length;
- TOPICS.forEach(t=>{const o=document.createElement("option");o.value=t;o.textContent=t;$("bankTopic").append(o)});
- renderBank(); renderBlueprint();
-}
-function renderBank(){
- const cat=$("bankCategory").value, topic=$("bankTopic").value, term=$("bankSearch").value.trim().toLowerCase();
- const filtered=BANK.filter(q=>eligible(q,cat)&&(!topic||q.submodule===topic)&&(!term||`${q.id} ${q.question}`.toLowerCase().includes(term)));
- const pages=Math.max(1,Math.ceil(filtered.length/20)); page=Math.min(page,pages-1);
- $("bankCount").textContent=`${filtered.length} eligible working questions for ${cat} · ${categoryKL({klA:"1",klB1:"2"},cat)} is shown per item`;
- $("bankPage").textContent=`Page ${page+1} of ${pages}`;
- $("bankPrev").disabled=page===0; $("bankNext").disabled=page>=pages-1;
- const list=$("bankList");list.innerHTML="";
- filtered.slice(page*20,(page+1)*20).forEach(q=>{
-  const card=document.createElement("article");card.className="qcard";
-  const meta=document.createElement("div");meta.className="qmeta";meta.textContent=`${q.id} · ${q.submodule} · ${categoryKL(q,cat)} · ${q.releaseEligibility||"status unknown"}`;
-  const stem=document.createElement("div");stem.className="qstem";stem.textContent=q.question;
-  card.append(meta,stem);
-  (q.options||[]).forEach(o=>{const label=document.createElement("div");label.className="opt";label.textContent=`${o.letter}. ${o.text}`;card.append(label)});
-  const reveal=document.createElement("button");reveal.className="btn secondary";reveal.textContent="Reveal stored answer";
-  const ans=document.createElement("div");ans.className="answer hidden";
-  reveal.onclick=()=>{ans.classList.toggle("hidden");ans.textContent=`Stored key: ${q.key} (${q.keyedAnswer}). ${q.explanation&&q.explanation.trim()&&!q.explanation.toLowerCase().includes("pending")?q.explanation:"A verified worked explanation is not yet available for this item."}`};
-  card.append(reveal,ans);list.append(card);
- });
-}
-["bankCategory","bankTopic"].forEach(id=>$(id).addEventListener("change",()=>{page=0;renderBank()}));
-$("bankSearch").addEventListener("input",()=>{page=0;renderBank()});
-$("bankPrev").onclick=()=>{page--;renderBank()};$("bankNext").onclick=()=>{page++;renderBank()};
-function renderBlueprint(){
- const cat=$("mockCategory").value, fam=cat==="A"?"A":"B1", bp=BLUEPRINT[fam];
- $("blueprintTable").innerHTML=Object.entries(bp.counts).map(([t,n])=>`<div class="result-row">${t}<b style="float:right">${n}</b></div>`).join("")+
- `<div class="result-row"><b>Total</b><b style="float:right">${Object.values(bp.counts).reduce((a,b)=>a+b,0)} questions · ${bp.minutes} minutes</b></div>`;
-}
-$("mockCategory").addEventListener("change",renderBlueprint);
-function shuffle(a){const x=[...a];for(let i=x.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[x[i],x[j]]=[x[j],x[i]]}return x}
-function buildExam(cat){
- const fam=cat==="A"?"A":"B1", bp=BLUEPRINT[fam], selected=[];
- for(const [topic,n] of Object.entries(bp.counts)){
-  const pool=BANK.filter(q=>eligible(q,cat)&&q.submodule===topic);
-  if(pool.length<n) throw new Error(`${topic}: requires ${n}, only ${pool.length} eligible items available.`);
-  selected.push(...shuffle(pool).slice(0,n));
- }
- return {cat,minutes:bp.minutes,items:shuffle(selected),index:0,answers:{},seconds:bp.minutes*60,submitted:false};
-}
-function startExam(){
- try{exam=buildExam($("mockCategory").value)}catch(e){alert(e.message);return}
- $("mockSetup").classList.add("hidden");$("examResult").classList.add("hidden");$("examPanel").classList.remove("hidden");
- $("examCategory").textContent=`CATEGORY ${exam.cat} · BETA MOCK`;
- renderExamQuestion();tick();timerHandle=setInterval(tick,1000);
-}
-$("startMock").onclick=startExam;
-function tick(){
- if(!exam)return;
- $("timer").textContent=`${String(Math.floor(exam.seconds/60)).padStart(2,"0")}:${String(exam.seconds%60).padStart(2,"0")}`;
- if(exam.seconds<=0){finishExam(true);return}
- exam.seconds--;
-}
-function renderExamQuestion(){
- const q=exam.items[exam.index], chosen=exam.answers[q.id];
- $("examProgress").textContent=`Question ${exam.index+1} of ${exam.items.length} · ${q.submodule} · ${categoryKL(q,exam.cat)}`;
- $("progressBar").style.width=`${(exam.index+1)/exam.items.length*100}%`;
- const box=$("examQuestion");box.innerHTML="";
- const stem=document.createElement("div");stem.className="qstem";stem.textContent=q.question;box.append(stem);
- shuffle(q.options||[]).forEach(o=>{
-  const b=document.createElement("button");b.className="option-btn"+(chosen===o.letter?" selected":"");b.textContent=`${o.letter}. ${o.text}`;
-  b.onclick=()=>{exam.answers[q.id]=o.letter;renderExamQuestion()};
-  box.append(b);
- });
- $("prevQ").disabled=exam.index===0;$("nextQ").disabled=exam.index===exam.items.length-1;
-}
-$("prevQ").onclick=()=>{if(exam.index>0){exam.index--;renderExamQuestion()}};
-$("nextQ").onclick=()=>{if(exam.index<exam.items.length-1){exam.index++;renderExamQuestion()}};
-$("submitMock").onclick=()=>{if(confirm("Submit this mock test now?"))finishExam(false)};
-function finishExam(timeout){
- if(!exam||exam.submitted)return;exam.submitted=true;if(timerHandle)clearInterval(timerHandle);
- let correct=0,answered=0;
- exam.items.forEach(q=>{const a=exam.answers[q.id];if(a){answered++;const chosen=(q.options||[]).find(o=>o.letter===a);if(chosen&&chosen.text===q.keyedAnswer)correct++}});
- const pct=Math.round(correct/exam.items.length*100), pass=pct>=75;
- const result=$("examResult");result.classList.remove("hidden");$("examPanel").classList.add("hidden");
- result.innerHTML=`<h2>Mock test result</h2><div class="grid"><div class="stat"><b>${correct}/${exam.items.length}</b><span class="small">Correct (stored key)</span></div><div class="stat"><b>${pct}%</b><span class="small">Practice score</span></div><div class="stat"><b>${answered}</b><span class="small">Answered · ${exam.items.length-answered} unanswered</span></div></div><p><b>${pass?"Above":"Below"} the 75% practice benchmark.</b> ${timeout?"Time expired.":"Test submitted."} This is not a validated examination result.</p><h3>Answer review</h3>`;
- exam.items.forEach((q,i)=>{
-  const selected=exam.answers[q.id], selectedOpt=(q.options||[]).find(o=>o.letter===selected);
-  const isCorrect=selectedOpt&&selectedOpt.text===q.keyedAnswer;
-  const exp=q.explanation&&q.explanation.trim()&&!q.explanation.toLowerCase().includes("pending")?q.explanation:"A verified worked explanation is not yet available for this item.";
-  const row=document.createElement("div");row.className="result-row";
-  row.innerHTML=`<b>${i+1}. ${q.id} · ${q.submodule}</b><br>Your answer: ${selected?selected+". "+(selectedOpt?.text||""):"Not answered"} · Stored key: ${q.key} (${q.keyedAnswer})<br><span class="small">${isCorrect?"Stored-key match":"No stored-key match"} · ${exp.replace(/</g,"&lt;")}</span>`;
-  result.append(row);
- });
- const back=document.createElement("button");back.className="btn";back.textContent="Back to mock test setup";back.onclick=()=>{exam=null;result.classList.add("hidden");$("mockSetup").classList.remove("hidden")};result.append(back);
-}
-loadBank().catch(e=>{console.error(e);alert("Unable to load Module 1 bank. Ensure data/module1-preview.json is uploaded beside index.html.")});
+const directory={
+'India':[{name:'DGCA India',desc:'Directorate General of Civil Aviation',cats:['AME pathway — details to be confirmed'],stage:'Directory listed; programme not yet released'}],
+'United Kingdom':[{name:'UK Civil Aviation Authority',desc:'UK CAA aircraft maintenance licensing',cats:['Part-66 Category A','Part-66 Category B1','Part-66 Category B2','Other applicable categories — verify'],stage:'Directory listed; UK-specific mapping required'}],
+'European Union / EASA Member State':[{name:'EASA Part-66 framework',desc:'Implemented through the relevant competent authority',cats:['Category A','Category B1','Category B2','Category B2L','Category B3'],stage:'Module 1 Mathematics pilot available'}],
+'United Arab Emirates':[{name:'GCAA UAE',desc:'General Civil Aviation Authority',cats:['Applicable aircraft maintenance pathway — verify'],stage:'Directory listed; programme not yet released'}],
+'Saudi Arabia':[{name:'GACA Saudi Arabia',desc:'General Authority of Civil Aviation',cats:['Applicable aircraft maintenance pathway — verify'],stage:'Directory listed; programme not yet released'}],
+'United States':[{name:'FAA',desc:'Federal Aviation Administration',cats:['Airframe','Powerplant','Airframe & Powerplant'],stage:'Separate certification pathway; programme not yet released'}],
+'Australia':[{name:'CASA',desc:'Civil Aviation Safety Authority',cats:['Applicable maintenance licence pathway — verify'],stage:'Directory listed; programme not yet released'}],
+'Canada':[{name:'Transport Canada',desc:'Aircraft maintenance engineer licensing',cats:['M1','M2','E','S'],stage:'Directory listed; programme not yet released'}],
+'New Zealand':[{name:'CAA New Zealand',desc:'Civil Aviation Authority',cats:['Applicable maintenance licence pathway — verify'],stage:'Directory listed; programme not yet released'}],
+'Other':[{name:'Authority directory enquiry',desc:'Additional countries will be assessed and added in stages.',cats:['To be confirmed'],stage:'Coming to the directory'}]};
+const country=document.getElementById('country'),authority=document.getElementById('authority'),licence=document.getElementById('licence'),go=document.getElementById('continue'),msg=document.getElementById('selectionMsg');let chosen=null;
+country.addEventListener('change',()=>{const arr=directory[country.value]||[];authority.innerHTML='<option value="">Choose examination authority</option>'+arr.map((x,i)=>`<option value="${i}">${x.name}</option>`).join('');authority.disabled=!arr.length;licence.innerHTML='<option value="">Choose licence / category</option>';licence.disabled=true;go.disabled=true;msg.style.display='none';});
+authority.addEventListener('change',()=>{chosen=(directory[country.value]||[])[Number(authority.value)];licence.innerHTML='<option value="">Choose licence / category</option>'+(chosen?chosen.cats:[]).map(x=>`<option>${x}</option>`).join('');licence.disabled=!chosen;go.disabled=true;});licence.addEventListener('change',()=>go.disabled=!licence.value);
+go.addEventListener('click',()=>{if(!chosen)return;const isEasa=country.value==='European Union / EASA Member State';msg.innerHTML=`<strong>${country.value} · ${chosen.name}</strong><br>${licence.value}<br><span style="color:#68798b">${chosen.stage}</span>${isEasa?'<br><br><a href="module1.html" style="font-weight:800;color:#245b83">Open the EASA Module 1 pilot →</a>':''}`;msg.style.display='block';});
+if('serviceWorker' in navigator && location.protocol.startsWith('http'))navigator.serviceWorker.register('./sw.js').catch(()=>{});
 </script>
 </body></html>
