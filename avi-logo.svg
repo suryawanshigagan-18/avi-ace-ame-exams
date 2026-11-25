@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+<title id="title">AVI aircraft emblem</title>
+<rect x="5" y="5" width="246" height="246" rx="34" fill="#0b1c30" stroke="#d8b66e" stroke-width="7"/>
+<text x="128" y="83" text-anchor="middle" fill="#f0dcae" font-family="Arial,sans-serif" font-size="59" font-weight="900" letter-spacing="2">AVI</text>
+<path d="M128 105 L139 133 L196 159 L196 170 L139 156 L137 198 L157 211 L157 220 L128 212 L99 220 L99 211 L119 198 L117 156 L60 170 L60 159 L117 133 Z" fill="#d8b66e" stroke="#f0dcae" stroke-width="2" stroke-linejoin="round"/>
+<path d="M30 231 Q128 247 226 231" fill="none" stroke="#d8b66e" stroke-width="3" stroke-linecap="round"/>
+</svg>

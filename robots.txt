@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://suryawanshigagan-18.github.io/avi-ace-ame-exams/sitemap.xml
